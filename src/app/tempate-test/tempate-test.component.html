@@ -1,0 +1,19 @@
+<app-child
+  [_myTemplate]="myTemplate"
+></app-child>
+
+<div *ngTemplateOutlet="myTemplate"></div>
+<ng-container *ngTemplateOutlet="myTemplate"></ng-container>
+
+
+<ng-template #myTemplate>
+  <div class="template-title">Hi am a Template</div>
+  <div class="template-content">
+    <p> content here</p>
+  </div>
+  <div class="template-actions">
+    <button mat-raised-button (click)="onOk()">Ok</button>
+  </div>
+
+
+</ng-template>

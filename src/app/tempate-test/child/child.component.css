@@ -1,0 +1,12 @@
+:host {
+    display: inline-block;
+    background-color: rosybrown;
+    border: 1px solid black;  
+    width: 50%;
+    margin-left: 20px;
+}
+
+.child {
+    background-color: cadetblue;
+}
+

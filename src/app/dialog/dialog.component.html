@@ -1,9 +1,19 @@
 <ol>
     <li>
 
-        <mat-label>What's your name?</mat-label>
-        <input matInput [(ngModel)]="name">
- 
+        <mat-form-field >
+            
+            <input matInput [(ngModel)]="name" required  #name1="ngModel">            
+            <mat-label>What's your name?</mat-label>
+            <mat-error *ngIf="!name1.valid" >Requier</mat-error>
+            <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+            </button>
+      
+
+        
+        </mat-form-field>
+
     </li>
     <li>
       <button mat-raised-button (click)="openDialog()">Pick one</button>

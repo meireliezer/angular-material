@@ -1,6 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
+
+
 import { MatSliderModule} from '@angular/material/slider';
 import { MatButtonModule} from '@angular/material/button'
 import { MatCardModule} from '@angular/material/card';
@@ -16,8 +20,9 @@ import { TempateTestComponent } from './tempate-test/tempate-test.component';
 import { CardComponent } from './card/card.component';
 import { ButtonsComponent } from './buttons/buttons.component';
 import { DialogComponent } from './dialog/dialog.component';
-import { FormsModule } from '@angular/forms';
+
 import { DialogOverviewExampleComponent } from './dialog/dialog-overview-example/dialog-overview-example.component';
+import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
 
 
 
@@ -30,18 +35,21 @@ import { DialogOverviewExampleComponent } from './dialog/dialog-overview-example
     CardComponent,
     ButtonsComponent,
     DialogComponent,
-    DialogOverviewExampleComponent
+    DialogOverviewExampleComponent,
+    ReactiveFormComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    FormsModule,
+    ReactiveFormsModule,
+
     MatSliderModule,
     MatButtonModule,
     MatCardModule,
     MatDialogModule,
     MatFormFieldModule,
-    MatInputModule,
-    FormsModule,
+    MatInputModule,   
     MatIconModule
 
     

@@ -1,0 +1,7 @@
+.form-field .ng-invalid.ng-dirty {
+    border: 1px solid red;
+}
+
+.field-error-message{
+    color: red;
+}

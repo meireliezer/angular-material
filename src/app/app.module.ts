@@ -4,6 +4,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSliderModule} from '@angular/material/slider';
 import { MatButtonModule} from '@angular/material/button'
 import { MatCardModule} from '@angular/material/card';
+import { MatDialogModule} from '@angular/material/dialog';
+import { MatFormFieldModule} from '@angular/material/form-field';
+
 
 
 import { AppComponent } from './app.component';
@@ -11,6 +14,10 @@ import { ChildComponent } from './tempate-test/child/child.component';
 import { TempateTestComponent } from './tempate-test/tempate-test.component';
 import { CardComponent } from './card/card.component';
 import { ButtonsComponent } from './buttons/buttons.component';
+import { DialogComponent } from './dialog/dialog.component';
+import { FormsModule } from '@angular/forms';
+import { DialogOverviewExampleComponent } from './dialog/dialog-overview-example/dialog-overview-example.component';
+
 
 
 
@@ -20,7 +27,9 @@ import { ButtonsComponent } from './buttons/buttons.component';
     ChildComponent,
     TempateTestComponent,
     CardComponent,
-    ButtonsComponent
+    ButtonsComponent,
+    DialogComponent,
+    DialogOverviewExampleComponent
   ],
   imports: [
     BrowserModule,
@@ -28,8 +37,14 @@ import { ButtonsComponent } from './buttons/buttons.component';
     MatSliderModule,
     MatButtonModule,
     MatCardModule,
+    MatDialogModule,
+    MatFormFieldModule,
+    FormsModule
+
+    
   ],
   providers: [],
+  entryComponents:[DialogOverviewExampleComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

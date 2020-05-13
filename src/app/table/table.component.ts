@@ -115,4 +115,9 @@ export class TableComponent implements OnInit, AfterViewInit {
 
       return totalConstString;
     }
+
+
+    isSelected(myRowData) {
+      return this.selection.isSelected(myRowData);
+    }
 }

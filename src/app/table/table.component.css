@@ -15,3 +15,7 @@ table {
   tr:hover {
     background-color: rgba(135, 207, 235, 0.534);
   }
+
+  .selected {
+    background-color: blue;
+  }

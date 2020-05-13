@@ -1,0 +1,48 @@
+<fieldset style="display:inline-block">
+    <legend>Template Dreiven Form</legend>
+
+
+    <form  autocomplete="off" novalidate> 
+        
+        <div class="form-field">
+            <label>Title:</label>
+            <input >        
+            <div class="field-error-message">Requierd</div>
+            <div class="field-error-message">Min Length of 5</div>        
+        </div>
+
+        <div class="form-field">
+            <label>Duration:</label>
+            <input> 
+            <div class="field-error-message"></div>
+        </div>
+
+        <div class="form-field">
+            <label>Description:</label>
+            <textarea></textarea>
+            <div class="field-error-message">Requierd</div>
+
+            <!-- Custom Validator -->
+            <div class="field-error-message">Must Include Meir</div>        
+    
+        </div>
+
+        
+        <!-- Regular FormControl-->
+        <div class="form-field">
+            <label>Not Part of the Form Group:</label>
+            <input >
+            <div class="field-error-message">Requierd</div>
+
+        
+        </div>
+
+        <!-- Not part of the Form Group-->
+        <div class="form-field">
+            <button class="lesson-button" type="submit"
+                [disabled]="!myForm.valid"
+            >Create Lesson</button>
+        </div>    
+    </form>
+
+</fieldset>

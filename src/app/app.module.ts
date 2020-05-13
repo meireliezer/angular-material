@@ -22,7 +22,8 @@ import { ButtonsComponent } from './buttons/buttons.component';
 import { DialogComponent } from './dialog/dialog.component';
 
 import { DialogOverviewExampleComponent } from './dialog/dialog-overview-example/dialog-overview-example.component';
-import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
+import { ReactiveFormComponent } from './forms/reactive-form/reactive-form.component';
+import { TemplateFormComponent } from './forms/template-form/template-form.component';
 
 
 
@@ -36,7 +37,8 @@ import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
     ButtonsComponent,
     DialogComponent,
     DialogOverviewExampleComponent,
-    ReactiveFormComponent
+    ReactiveFormComponent,
+    TemplateFormComponent
   ],
   imports: [
     BrowserModule,

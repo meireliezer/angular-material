@@ -63,7 +63,12 @@ export class TableComponent implements OnInit, AfterViewInit {
 
 
   ngOnInit() {
-  
+    
+    // Notify on selection
+    this.selection.changed.subscribe( val => {
+      console.log(val)
+    })
+    
   }
 
   ngAfterViewInit(): void {

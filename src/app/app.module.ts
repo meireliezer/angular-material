@@ -12,6 +12,7 @@ import { MatDialogModule} from '@angular/material/dialog';
 import { MatFormFieldModule} from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatIconModule } from '@angular/material/icon';
+import { MatTableModule } from '@angular/material/table';
 
 
 import { AppComponent } from './app.component';
@@ -25,6 +26,7 @@ import { DialogOverviewExampleComponent } from './dialog/dialog-overview-example
 import { ReactiveFormComponent } from './forms/reactive-form/reactive-form.component';
 import { TemplateFormComponent } from './forms/template-form/template-form.component';
 import { IncludeMeirValidatorDirective } from './forms/template-form/include-meir-validator.directive';
+import { TableComponent } from './table/table.component';
 
 
 
@@ -40,7 +42,8 @@ import { IncludeMeirValidatorDirective } from './forms/template-form/include-mei
     DialogOverviewExampleComponent,
     ReactiveFormComponent,
     TemplateFormComponent,
-    IncludeMeirValidatorDirective
+    IncludeMeirValidatorDirective,
+    TableComponent
   ],
   imports: [
     BrowserModule,
@@ -54,7 +57,8 @@ import { IncludeMeirValidatorDirective } from './forms/template-form/include-mei
     MatDialogModule,
     MatFormFieldModule,
     MatInputModule,   
-    MatIconModule
+    MatIconModule,
+    MatTableModule
 
     
   ],

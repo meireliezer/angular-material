@@ -13,6 +13,10 @@ import { MatFormFieldModule} from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatIconModule } from '@angular/material/icon';
 import { MatTableModule } from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort';
+
+ 
 
 
 import { AppComponent } from './app.component';
@@ -58,7 +62,9 @@ import { TableComponent } from './table/table.component';
     MatFormFieldModule,
     MatInputModule,   
     MatIconModule,
-    MatTableModule
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule
 
     
   ],

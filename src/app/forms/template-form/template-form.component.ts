@@ -7,9 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TemplateFormComponent implements OnInit {
 
+  public lesson = {
+    title: 'Meir the King',
+    description: 'about Meir',
+    duration: 20
+  }
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  public onPrintData(){
+    console.log('lesson: ',this.lesson);
   }
 
 }

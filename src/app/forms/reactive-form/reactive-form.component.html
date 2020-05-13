@@ -32,17 +32,15 @@
 
         
         <!-- Regular FormControl-->
+        <!-- Not part of the Form Group-->
         <div class="form-field">
             <label>Not Part of the Form Group:</label>
             <input [formControl]="notPartOfTheFormGroup">
             <div class="field-error-message"
                 *ngIf="notPartOfTheFormGroup.dirty && notPartOfTheFormGroup.errors?.required"
-            >Requierd</div>
-
-        
+            >Requierd</div>        
         </div>
-
-        <!-- Not part of the Form Group-->
+        
         <div class="form-field">
             <button class="lesson-button" type="submit"
                 [disabled]="!myForm.valid"

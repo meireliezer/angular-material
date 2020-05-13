@@ -2,47 +2,52 @@
     <legend>Template Dreiven Form</legend>
 
 
-    <form  autocomplete="off" novalidate> 
+    <form  #f="ngForm" autocomplete="off" novalidate> 
         
         <div class="form-field">
             <label>Title:</label>
-            <input >        
-            <div class="field-error-message">Requierd</div>
-            <div class="field-error-message">Min Length of 5</div>        
+            <input name="title" #name="ngModel" [(ngModel)]="lesson.title" required minlength="5">        
+            <div class="field-error-message"
+                *ngIf="name.errors?.required">Requierd</div>
+            <div class="field-error-message"
+                *ngIf="name.errors?.minlength">Min Length of 5</div>        
         </div>
 
         <div class="form-field">
             <label>Duration:</label>
-            <input> 
-            <div class="field-error-message"></div>
+            <input name="duration" #duration="ngModel"  [(ngModel)]="lesson.duration" required> 
+            <div class="field-error-message"
+                *ngIf="duration.errors?.required">Requierd</div>
         </div>
 
         <div class="form-field">
             <label>Description:</label>
-            <textarea></textarea>
-            <div class="field-error-message">Requierd</div>
+            <textarea name="description" #description="ngModel" [(ngModel)]="lesson.description" required></textarea>
+            <div class="field-error-message"
+                *ngIf="description.errors?.required">Requierd</div>
 
             <!-- Custom Validator -->
             <div class="field-error-message">Must Include Meir</div>        
     
         </div>
-
         
-        <!-- Regular FormControl-->
         <div class="form-field">
             <label>Not Part of the Form Group:</label>
-            <input >
-            <div class="field-error-message">Requierd</div>
+            <input name="notPart" #notPart="ngModel" ngModel required>
+            <div class="field-error-message"
+                *ngIf="notPart.errors?.required">Requierd</div>
 
         
         </div>
 
-        <!-- Not part of the Form Group-->
+
         <div class="form-field">
             <button class="lesson-button" type="submit"
-                [disabled]="!myForm.valid"
+                [disabled]="!f.valid"
             >Create Lesson</button>
         </div>    
+
+        <button (click)="onPrintData()">Print Data </button>
     </form>
 
 </fieldset>

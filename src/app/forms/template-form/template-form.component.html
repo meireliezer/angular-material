@@ -22,15 +22,17 @@
 
         <div class="form-field">
             <label>Description:</label>
-            <textarea name="description" #description="ngModel" [(ngModel)]="lesson.description" required></textarea>
+            <textarea name="description" #description="ngModel" [(ngModel)]="lesson.description" required appIncludeMeir></textarea>
             <div class="field-error-message"
                 *ngIf="description.errors?.required">Requierd</div>
 
             <!-- Custom Validator -->
-            <div class="field-error-message">Must Include Meir</div>        
+            <div class="field-error-message"
+                *ngIf="description.errors?.includeMeir">Must Include Meir</div>        
     
         </div>
         
+        <!-- Not part of the model but part of the form-->
         <div class="form-field">
             <label>Not Part of the Form Group:</label>
             <input name="notPart" #notPart="ngModel" ngModel required>

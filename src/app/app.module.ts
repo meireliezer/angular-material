@@ -24,6 +24,7 @@ import { DialogComponent } from './dialog/dialog.component';
 import { DialogOverviewExampleComponent } from './dialog/dialog-overview-example/dialog-overview-example.component';
 import { ReactiveFormComponent } from './forms/reactive-form/reactive-form.component';
 import { TemplateFormComponent } from './forms/template-form/template-form.component';
+import { IncludeMeirValidatorDirective } from './forms/template-form/include-meir-validator.directive';
 
 
 
@@ -38,7 +39,8 @@ import { TemplateFormComponent } from './forms/template-form/template-form.compo
     DialogComponent,
     DialogOverviewExampleComponent,
     ReactiveFormComponent,
-    TemplateFormComponent
+    TemplateFormComponent,
+    IncludeMeirValidatorDirective
   ],
   imports: [
     BrowserModule,

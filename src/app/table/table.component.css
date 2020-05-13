@@ -1,3 +1,17 @@
 table {
     width: 100%;
   }
+
+  .mat-column-select {
+    overflow: initial;
+  }
+
+
+  tr {
+    transition: background-color ease-in 500ms;
+    cursor: pointer;
+  }
+
+  tr:hover {
+    background-color: rgba(135, 207, 235, 0.534);
+  }
